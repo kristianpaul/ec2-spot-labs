@@ -70,18 +70,15 @@ Outputs:
       Ref: spotFleet
 Parameters:
   ecsClusterTargetCapacity:
-    Default: 2
+    Default: 1
     Description: Number of EC2 Spot instances to initially launch in the ECS cluster
     Type: Number
   instanceType:
     AllowedValues:
     - c3.large
     - c4.large
-    - m3.large
-    - m4.large
-    - r3.large
-    - r4.large
-    Default: c4.large
+    - c5.large
+    Default: c3.large
     Description: EC2 instance type to use for ECS cluster
     Type: String
   keyName:
